@@ -12,13 +12,19 @@
             background-color: #f8f9fa;
         }
 
-        h1 {
+        h1,
+        h2 {
             color: #343a40;
+        }
+
+        h1 {
             font-weight: 700;
+            margin-top: 20px;
         }
 
         h2 {
             color: #007bff;
+            margin-top: 30px;
         }
 
         p {
@@ -68,11 +74,38 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         .btn-custom:hover {
             background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
             color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e9ecef;
         }
     </style>
 </head>
@@ -89,12 +122,11 @@
             <a href="#red-neuronal" class="btn-custom">Red Neuronal</a>
         </div>
 
-        <h2 class="mt-4" id="inteligencia-artificial">Inteligencia Artificial</h2>
+        <h2 id="inteligencia-artificial">Inteligencia Artificial</h2>
         <p class="lead">He aprendido sobre algunos nombres de IA, normalizando todos los datos en Excel utilizando ETL
-            para la
-            transformación de datos.</p>
+            para la transformación de datos.</p>
 
-        <h2 class="mt-4" id="actividades">Actividades Similares</h2>
+        <h2 id="actividades">Actividades Similares</h2>
 
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -103,8 +135,7 @@
                         class="img-custom-size card-img-top">
                     <div class="card-body">
                         <p class="card-text">Vimos que datos se repetían y buscamos graficar de cierta que nos brindara
-                            dicha información en
-                            una gráfica de pastel.</p>
+                            dicha información en una gráfica de pastel.</p>
                     </div>
                 </div>
             </div>
@@ -124,19 +155,18 @@
                         class="img-custom-size card-img-top">
                     <div class="card-body">
                         <p class="card-text">Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda
-                            de ChatGPT y las
-                            rectificamos manualmente.</p>
+                            de ChatGPT y las rectificamos manualmente.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="mt-4" id="aprendizaje">CLASE 22 DE AGOSTO, APRENDIZAJE</h2>
+        <h2 id="aprendizaje">CLASE 22 DE AGOSTO, APRENDIZAJE</h2>
         <p>Durante la clase del 22 de agosto conocimos los porcentajes de evaluación para la clase. Aprendimos que la
             Inteligencia artificial se basa en la inteligencia que utilizamos los seres humanos al realizar una tarea en
             nuestro día a día.</p>
 
-        <h2 class="mt-4" id="red-neuronal">CLASE 29 DE AGOSTO, REDES NEURONALES</h2>
+        <h2 id="red-neuronal">CLASE 29 DE AGOSTO, REDES NEURONALES</h2>
 
         <h3>¿QUÉ ES RED NEURONAL?</h3>
 
@@ -147,16 +177,13 @@
             <img src="5.png" alt="RED NEURONAL" class="img-custom-size card-img-top">
             <div class="card-body">
                 <p class="card-text">Las redes neuronales profundas son un avance clave en el campo de la visión por
-                    computadora y el
-                    reconocimiento de voz.</p>
+                    computadora y el reconocimiento de voz.</p>
             </div>
         </div>
 
-        <h2 class="mt-4">CLASE 12 DE SEPTIEMBRE, REDES NEURONALES EJEMPLO PRÁCTICO EN GOOGLE COLAB</h2>
-        <p>
-            Durante la clase de redes neuronales, abordamos un ejemplo práctico en la plataforma de Google Colab basado
-            en Python.
-        </p>
+        <h2>CLASE 12 DE SEPTIEMBRE, REDES NEURONALES EJEMPLO PRÁCTICO EN GOOGLE COLAB</h2>
+        <p>Durante la clase de redes neuronales, abordamos un ejemplo práctico en la plataforma de Google Colab basado
+            en Python.</p>
 
         <div class="card my-4">
             <img src="CONVERSION.PNG" alt="RED NEURONAL" class="img-custom-size card-img-top">
@@ -164,6 +191,49 @@
                 <p class="card-text">GRÁFICA OBTENIDA DEL ENTRENAMIENTO</p>
             </div>
         </div>
+
+        <h1>Comparación de Resultados de Laberintos</h1>
+
+
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Laberinto</th>
+                    <th>Algoritmo</th>
+                    <th>Estados Explorados</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laberinto Grupo A</td>
+                    <td>BFS</td>
+                    <td>331</td>
+                    <td><img src="LABERINTO GRUPO A BFS.png" alt="Laberinto Grupo A BFS" class="img-custom-size"></td>
+                </tr>
+                <tr>
+                    <td>Laberinto Grupo B</td>
+                    <td>BFS</td>
+                    <td>319</td>
+                    <td><img src="LABERINTO GRUPO B BFS.png" alt="Laberinto Grupo B BFS" class="img-custom-size"></td>
+                </tr>
+                <tr>
+                    <td>Laberinto Grupo A</td>
+                    <td>DFS</td>
+                    <td>227</td>
+                    <td><img src="LABERINTO GRUPO A DFS.png" alt="Laberinto Grupo A DFS" class="img-custom-size"></td>
+                </tr>
+                <tr>
+                    <td>Laberinto Grupo B</td>
+                    <td>DFS</td>
+                    <td>265</td>
+                    <td><img src="LABERINTO GRUPO B DFS.png" alt="Laberinto Grupo B DFS" class="img-custom-size"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
 
         <h2>Código de TensorFlow con Comentarios</h2>
         <div class="code-container">
