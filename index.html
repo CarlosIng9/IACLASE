@@ -8,11 +8,71 @@
     <!-- Incluir CSS de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            color: #343a40;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            text-align: justify;
+        }
+
         .img-custom-size {
             width: 100%;
             height: 300px;
             object-fit: cover;
-            /* Asegura que la imagen mantenga su proporción sin deformarse */
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .code-container {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+        }
+
+        pre code {
+            background-color: #f1f1f1;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .btn-navigate {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
         }
     </style>
 </head>
@@ -22,12 +82,19 @@
     <div class="container">
         <h1 class="my-4 text-center">INTELIGENCIA ARTIFICIAL</h1>
 
-        <h2 class="mt-4">Inteligencia Artificial</h2>
+        <div class="btn-navigate">
+            <a href="#inteligencia-artificial" class="btn-custom">Inteligencia Artificial</a>
+            <a href="#actividades" class="btn-custom">Actividades Similares</a>
+            <a href="#aprendizaje" class="btn-custom">Aprendizaje</a>
+            <a href="#red-neuronal" class="btn-custom">Red Neuronal</a>
+        </div>
+
+        <h2 class="mt-4" id="inteligencia-artificial">Inteligencia Artificial</h2>
         <p class="lead">He aprendido sobre algunos nombres de IA, normalizando todos los datos en Excel utilizando ETL
             para la
             transformación de datos.</p>
 
-        <h2 class="mt-4">Actividades Similares</h2>
+        <h2 class="mt-4" id="actividades">Actividades Similares</h2>
 
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -58,83 +125,77 @@
                     <div class="card-body">
                         <p class="card-text">Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda
                             de ChatGPT y las
-                            rectificamos manualmente. También hicimos lo mismo con las palabras únicas (que no se
-                            repetían). Luego,
-                            hicimos la suma de las palabras repetidas y contamos las palabras únicas, y finalmente,
-                            realizamos un gráfico
-                            circular 3D con los números de las palabras repetidas.</p>
+                            rectificamos manualmente.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="mt-4">CLASE 22 DE AGOSTO, APRENDIZAJE</h2>
+        <h2 class="mt-4" id="aprendizaje">CLASE 22 DE AGOSTO, APRENDIZAJE</h2>
         <p>Durante la clase del 22 de agosto conocimos los porcentajes de evaluación para la clase. Aprendimos que la
             Inteligencia artificial se basa en la inteligencia que utilizamos los seres humanos al realizar una tarea en
-            nuestro día a día. La inteligencia artificial busca replicar estas acciones mediante aprendizajes o
-            entrenamientos avanzados.</p>
+            nuestro día a día.</p>
 
-        <p>Conocimos un poco sobre patrones como el algoritmo de pila y de cola, recordando cómo se comportan estos
-            algoritmos en el sistema al ser aplicados. También aprendimos a conectar nuestro repositorio de GitHub con
-            una carpeta en nuestro computador.</p>
-
-        <h2 class="mt-4">CLASE 29 DE AGOSTO, REDES NEURONALES </h2>
-
-        <p>Durante la clase del 29 de agosto abordamos la temática de redes neuronales, donde conocimos conceptos
-            importantes del tema.</p>
+        <h2 class="mt-4" id="red-neuronal">CLASE 29 DE AGOSTO, REDES NEURONALES</h2>
 
         <h3>¿QUÉ ES RED NEURONAL?</h3>
 
-        <p>Una red neuronal, en términos generales, es un modelo computacional inspirado en la estructura del cerebro
-            humano. La utilizo para resolver problemas complejos que requieren reconocer patrones, como la clasificación
-            de imágenes, el procesamiento de lenguaje natural, y la predicción de series temporales. La red está formada
-            por un conjunto de neuronas artificiales organizadas en capas: una capa de entrada, una o más capas ocultas,
-            y una capa de salida.</p>
-
-        <p>Vimos un video donde nos explica cómo se debe entrenar una red neuronal para lograr reconocer un número. Se
-            mide el tamaño de la imagen en píxeles; en el ejemplo era una imagen de 28px por 28px, donde se multiplica y
-            obtenemos como resultado 784. Estos serían el número de vértices o nodos, los cuales serían las entradas.
-            Estos nodos tienen su propio peso y acción. Se realizan matrices para lograr entrenar y reconocer los
-            patrones que se desean analizar.</p>
+        <p>Una red neuronal es un modelo computacional inspirado en la estructura del cerebro humano. La utilizo para
+            resolver problemas complejos que requieren reconocer patrones.</p>
 
         <div class="card my-4">
-            <img src="5.png" alt="RED NEURONAL">
+            <img src="5.png" alt="RED NEURONAL" class="img-custom-size card-img-top">
             <div class="card-body">
                 <p class="card-text">Las redes neuronales profundas son un avance clave en el campo de la visión por
                     computadora y el
-                    reconocimiento de voz. Durante la última década, las redes neuronales profundas han permitido a las
-                    máquinas reconocer imágenes, voz e incluso jugar con una precisión casi imposible para los humanos.
-                </p>
+                    reconocimiento de voz.</p>
             </div>
         </div>
 
-        <h2 class="mt-4">CLASE 12 DE SEPTIEMBRE, REDES NEURONALES EJEMPLO PRACTICO EN GOOGLE COLAB</h2>
-
+        <h2 class="mt-4">CLASE 12 DE SEPTIEMBRE, REDES NEURONALES EJEMPLO PRÁCTICO EN GOOGLE COLAB</h2>
         <p>
-            Durante la clase de redes neuronales, abordamos un ejemplo practico en la plataforma de google colaboratory
-            basado en python, donde realizamos un entrenamiento para hacer una conversión de Celsius a Fahrenheis.
-            En este ejercicio, construimos y entrenamos una red neuronal para resolver un problema de regresión, que
-            consistía
-            en convertir temperaturas de Celsius a Fahrenheit. Para hacerlo, definimos el modelo utilizando TensorFlow y
-            Keras, donde tenía dos capas ocultas con 3 neuronas cada una, tambien una capa de salida con 1 neurona. Esta
-            última
-            capa fue diseñada para predecir un único valor de Fahrenheit. Luego, compilamos el modelo, utilizando el
-            optimizador Adam con una tasa de aprendizaje de 0.1, y la función de pérdida mean_squared_error, que es
-            adecuada para medir el error en problemas de regresión. Luego, durante 1000 épocas, se entreno el modelo
-            para
-            minimizar el error entre las predicciones y los valores reales. Después de eso, visualizamos la evolución de
-            la
-            pérdida para ver que el modelo esté mejorando y hicimos una predicción para 100 grados Celsius, donde
-            obtuvimos el
-            valor correspondiente en Fahrenheit.
+            Durante la clase de redes neuronales, abordamos un ejemplo práctico en la plataforma de Google Colab basado
+            en Python.
         </p>
 
         <div class="card my-4">
-            <img src="CONVERSION.PNG" alt="RED NEURONAL">
+            <img src="CONVERSION.PNG" alt="RED NEURONAL" class="img-custom-size card-img-top">
             <div class="card-body">
-                <p class="card-text">GRAFICA OBTENIDA DEL ENTRENAMIENTO</p>
-
+                <p class="card-text">GRÁFICA OBTENIDA DEL ENTRENAMIENTO</p>
             </div>
+        </div>
+
+        <h2>Código de TensorFlow con Comentarios</h2>
+        <div class="code-container">
+            <pre><code># Importa TensorFlow y NumPy
+import tensorflow as tf
+import numpy as np
+
+# Datos de entrenamiento
+celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
+fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
+
+# Capas del modelo
+oculta1 = tf.keras.layers.Dense(units=3, input_shape=[1])
+oculta2 = tf.keras.layers.Dense(units=3)
+salida = tf.keras.layers.Dense(units=1)
+
+# Definición del modelo
+modelo = tf.keras.Sequential([oculta1, oculta2, salida])
+
+# Compilar el modelo
+modelo.compile(optimizer=tf.keras.optimizers.Adam(0.1), loss='mean_squared_error')
+
+# Entrenamiento del modelo
+historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)
+
+# Visualizar la pérdida
+import matplotlib.pyplot as plt
+plt.xlabel("# Época")
+plt.ylabel("Magnitud de pérdida")
+plt.plot(historial.history["loss"])
+plt.show()
+</code></pre>
         </div>
 
     </div>
