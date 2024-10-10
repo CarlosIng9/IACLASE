@@ -314,6 +314,54 @@ plt.show()
         2, descargar dando clic en el texto siguiente:</P>
     <a href="ingeniero.pdf" target="_blank">Descargar/Ver el PDF</a>
 
+    <h2>ANALISIS DEL CODIGO </h2>
+    <P>El código que has compartido implementa un juego de Tic-Tac-Toe (Tres en Raya) donde la computadora siempre gana
+        o al menos empata. El motivo principal por el que la computadora parece invencible es porque utiliza el
+        algoritmo Minimax, el cual está diseñado para tomar decisiones óptimas. A continuación, explico el análisis
+        detallado:
+
+        Análisis del código y razones por las que la computadora siempre gana:
+        Algoritmo Minimax:
+
+        El algoritmo Minimax simula todos los movimientos posibles en el tablero y busca maximizar la ganancia de la
+        computadora (jugador 1) y minimizar la del humano (jugador -1).
+        El algoritmo es perfecto en el sentido de que considera todas las posibles jugadas futuras, lo que lo hace
+        invulnerable. Siempre elegirá la jugada que, como mínimo, lo llevará a un empate, y como máximo, a una victoria.
+        Evaluación exhaustiva:
+
+        La función movimiento_computadora recorre todas las posiciones vacías del tablero y para cada posición, evalúa
+        el resultado del movimiento utilizando el algoritmo Minimax. Esto asegura que la computadora siempre elige el
+        mejor movimiento posible.
+        Estado terminal:
+
+        La función evaluar y la función ganador determinan si uno de los jugadores ha ganado. Si la computadora puede
+        ganar en algún movimiento, lo hará. Si no puede ganar, forzará un empate. Debido a que el tablero tiene un
+        número limitado de movimientos posibles (9 espacios), la computadora puede calcular todas las secuencias de
+        jugadas.
+        No hay margen para errores humanos:
+
+        El Minimax está diseñado para minimizar las pérdidas. Si el humano comete un error, la computadora lo explotará
+        inmediatamente.
+        ¿Es posible ganarle a la computadora?
+        Dado que Minimax garantiza que la computadora siempre jugará de forma óptima, no es posible ganarle si la
+        computadora sigue el algoritmo correctamente. Si juegas perfectamente (como el algoritmo), el mejor resultado
+        que puedes obtener es un empate. El único caso en el que podrías ganar es si modificas el código para que la
+        computadora no siempre juegue de manera perfecta.
+
+        Probabilidades de ganarle:
+        Las probabilidades de ganarle a una computadora que usa Minimax son prácticamente nulas si el juego se
+        desarrolla sin errores de código. Esto se debe a que el algoritmo no permite que la computadora cometa errores.
+
+        ¿Cómo podrías ganar siempre?
+        Alterar el código:
+
+        Modificar el algoritmo Minimax para que no busque siempre el mejor movimiento. Por ejemplo, podrías introducir
+        un factor de aleatoriedad o hacer que la computadora omita ciertos movimientos óptimos.
+        Imponer limitaciones a la computadora:
+
+        Reducir la profundidad con la que la computadora analiza las jugadas. Si limitas el número de jugadas que el
+        Minimax puede considerar, se vuelve más fácil para el humano encontrar una secuencia ganadora.</P>
+
     <!-- Incluir JavaScript de Bootstrap y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
