@@ -7,135 +7,38 @@
     <title>INTELIGENCIA ARTIFICIAL</title>
     <!-- Incluir CSS de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
-        h1,
-        h2 {
-            color: #343a40;
-        }
-
-        h1 {
-            font-weight: 700;
-            margin-top: 20px;
-        }
-
-        h2 {
-            color: #007bff;
-            margin-top: 30px;
-        }
-
-        p {
-            text-align: justify;
-        }
-
-        .img-custom-size {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .code-container {
-            background-color: #f1f1f1;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
-            white-space: pre-wrap;
-        }
-
-        pre code {
-            background-color: #f1f1f1;
-            padding: 10px;
-            display: block;
-            border-radius: 5px;
-        }
-
-        .btn-navigate {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .btn-custom {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .btn-custom:hover {
-            background-color: #0056b3;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #fff;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #e9ecef;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <div class="container">
+        <!-- Encabezado principal -->
         <h1 class="my-4 text-center">INTELIGENCIA ARTIFICIAL</h1>
 
+        <!-- Botones de navegación -->
         <div class="btn-navigate">
             <a href="#inteligencia-artificial" class="btn-custom">Inteligencia Artificial</a>
             <a href="#actividades" class="btn-custom">Actividades Similares</a>
             <a href="#aprendizaje" class="btn-custom">Aprendizaje</a>
             <a href="#red-neuronal" class="btn-custom">Red Neuronal</a>
+            <a href="#parcial-2" class="btn-custom">Parcial 2</a>
         </div>
 
+        <!-- Sección Inteligencia Artificial -->
         <h2 id="inteligencia-artificial">Inteligencia Artificial</h2>
         <p class="lead">He aprendido sobre algunos nombres de IA, normalizando todos los datos en Excel utilizando ETL
             para la transformación de datos.</p>
 
+        <!-- Sección Actividades Similares -->
         <h2 id="actividades">Actividades Similares</h2>
-
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="1.jpeg" alt="Gráfico de pastel mostrando datos repetidos"
                         class="img-custom-size card-img-top">
                     <div class="card-body">
-                        <p class="card-text">Vimos que datos se repetían y buscamos graficar de cierta que nos brindara
-                            dicha información en una gráfica de pastel.</p>
+                        <p class="card-text">Vimos qué datos se repetían y los graficamos en una gráfica de pastel.</p>
                     </div>
                 </div>
             </div>
@@ -144,8 +47,7 @@
                     <img src="2.jpeg" alt="Agrupación manual de actividades similares"
                         class="img-custom-size card-img-top">
                     <div class="card-body">
-                        <p class="card-text">Se agruparon las actividades que eran similares y se contaron manualmente.
-                        </p>
+                        <p class="card-text">Agrupamos manualmente actividades similares y las contamos.</p>
                     </div>
                 </div>
             </div>
@@ -154,48 +56,46 @@
                     <img src="3.jpeg" alt="Análisis de palabras repetidas y únicas con gráficos circulares 3D"
                         class="img-custom-size card-img-top">
                     <div class="card-body">
-                        <p class="card-text">Elegimos la columna número 5 y sacamos las palabras repetidas con la ayuda
-                            de ChatGPT y las rectificamos manualmente.</p>
+                        <p class="card-text">Elegimos palabras repetidas de la columna 5 con la ayuda de ChatGPT y las
+                            verificamos manualmente.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Sección Aprendizaje -->
         <h2 id="aprendizaje">CLASE 22 DE AGOSTO, APRENDIZAJE</h2>
-        <p>Durante la clase del 22 de agosto conocimos los porcentajes de evaluación para la clase. Aprendimos que la
-            Inteligencia artificial se basa en la inteligencia que utilizamos los seres humanos al realizar una tarea en
-            nuestro día a día.</p>
+        <p>En esta clase aprendimos sobre los porcentajes de evaluación y cómo la inteligencia artificial se basa en la
+            forma en que los humanos resolvemos tareas diarias.</p>
 
+        <!-- Sección Red Neuronal -->
         <h2 id="red-neuronal">CLASE 29 DE AGOSTO, REDES NEURONALES</h2>
-
         <h3>¿QUÉ ES RED NEURONAL?</h3>
-
-        <p>Una red neuronal es un modelo computacional inspirado en la estructura del cerebro humano. La utilizo para
-            resolver problemas complejos que requieren reconocer patrones.</p>
+        <p>Una red neuronal es un modelo computacional inspirado en el cerebro humano. Se usa para problemas complejos
+            que requieren reconocimiento de patrones.</p>
 
         <div class="card my-4">
             <img src="5.png" alt="RED NEURONAL" class="img-custom-size card-img-top">
             <div class="card-body">
-                <p class="card-text">Las redes neuronales profundas son un avance clave en el campo de la visión por
-                    computadora y el reconocimiento de voz.</p>
+                <p class="card-text">Las redes neuronales profundas son clave en el reconocimiento de voz y visión por
+                    computadora.</p>
             </div>
         </div>
 
-        <h2>CLASE 12 DE SEPTIEMBRE, REDES NEURONALES EJEMPLO PRÁCTICO EN GOOGLE COLAB</h2>
-        <p>Durante la clase de redes neuronales, abordamos un ejemplo práctico en la plataforma de Google Colab basado
-            en Python.</p>
+        <!-- Ejemplo práctico en Google Colab -->
+        <h2>CLASE 12 DE SEPTIEMBRE, EJEMPLO PRÁCTICO EN GOOGLE COLAB</h2>
+        <p>En esta clase trabajamos con redes neuronales en Google Colab, utilizando Python.</p>
 
         <div class="card my-4">
-            <img src="CONVERSION.PNG" alt="RED NEURONAL" class="img-custom-size card-img-top">
+            <img src="CONVERSION.PNG" alt="Gráfica de entrenamiento de red neuronal"
+                class="img-custom-size card-img-top">
             <div class="card-body">
-                <p class="card-text">GRÁFICA OBTENIDA DEL ENTRENAMIENTO</p>
+                <p class="card-text">Gráfica obtenida del entrenamiento de la red neuronal.</p>
             </div>
         </div>
 
-        <h1>Comparación de Resultados de Laberintos</h1>
-
-
-
+        <!-- Tabla de comparación de laberintos -->
+        <h2>Comparación de Resultados de Laberintos</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -233,134 +133,120 @@
             </tbody>
         </table>
 
+        <div class="container mt-5">
+            <h2 class="text-center mb-4" id="parcial-2">PARCIAL 2: INTELIGENCIA ARTIFICIAL</h2>
 
+            <h3>Introducción a la Lógica Proposicional y Model Checking</h3>
+            <p>
+                En este documento vamos a explorar cómo la lógica proposicional y el model checking pueden ser
+                utilizados para
+                realizar inferencias lógicas. Nos basaremos en dos ejemplos de código que ilustran cómo construir y
+                consultar
+                una base de conocimientos en Python utilizando estructuras lógicas como símbolos, implicaciones y
+                conectivos
+                lógicos.
+            </p>
 
-        <h2>Código de TensorFlow con Comentarios</h2>
-        <div class="code-container">
-            <pre><code># Importa TensorFlow y NumPy
-import tensorflow as tf
-import numpy as np
+            <p>
+                En estos ejemplos, abordamos situaciones relacionadas con la inferencia lógica a partir de un conjunto
+                de
+                proposiciones. Usamos un sistema en el cual definimos hechos y reglas, y posteriormente verificamos qué
+                conclusiones pueden derivarse de la base de conocimiento, empleando un proceso conocido como "model
+                checking".
+            </p>
 
-# Datos de entrenamiento
-celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
-fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
+            <h4>Ejemplo original: Caso de los estudiantes y la lluvia</h4>
+            <p>
+                El primer ejemplo se basa en la siguiente situación:
+            </p>
 
-# Capas del modelo
-oculta1 = tf.keras.layers.Dense(units=3, input_shape=[1])
-oculta2 = tf.keras.layers.Dense(units=3)
-salida = tf.keras.layers.Dense(units=1)
+            <h5>Escenario:</h5>
+            <ul>
+                <li>Si no llueve, los estudiantes visitan BBC hoy.</li>
+                <li>Los estudiantes visitaron BBC o Unimayor, pero no ambos.</li>
+                <li>Se sabe que los estudiantes visitaron Unimayor hoy.</li>
+            </ul>
 
-# Definición del modelo
-modelo = tf.keras.Sequential([oculta1, oculta2, salida])
+            <p>
+                Con este conjunto de proposiciones, podemos hacernos preguntas como:
+            </p>
 
-# Compilar el modelo
-modelo.compile(optimizer=tf.keras.optimizers.Adam(0.1), loss='mean_squared_error')
+            <ul>
+                <li>¿Qué podemos inferir acerca de BBC?</li>
+                <li>¿Qué podemos inferir acerca del clima (si llovió o no)?</li>
+            </ul>
 
-# Entrenamiento del modelo
-historial = modelo.fit(celsius, fahrenheit, epochs=1000, verbose=False)
+            <p>
+                En términos de lógica proposicional, esto se puede representar usando símbolos lógicos y expresiones. El
+                código
+                original utiliza una serie de símbolos (rain, bbc, unimayor) y los combina con conectivos lógicos como
+                la
+                implicación (Implication), la conjunción (And), la disyunción (Or) y la negación (Not). Posteriormente,
+                se
+                realiza una verificación mediante la función model_check, que evalúa todos los posibles modelos de
+                verdad y determina si
+                la consulta es verdadera o falsa según la base de conocimientos.
+            </p>
 
-# Visualizar la pérdida
-import matplotlib.pyplot as plt
-plt.xlabel("# Época")
-plt.ylabel("Magnitud de pérdida")
-plt.plot(historial.history["loss"])
-plt.show()
-</code></pre>
+            <p>
+                Este código ilustra cómo una base de conocimiento estructurada nos permite responder preguntas sobre
+                situaciones
+                lógicas complejas de manera formal y precisa.
+            </p>
+
+            <h4>Ejemplo mejorado: Refinando el proceso de inferencia</h4>
+            <p>
+                El código mejorado parte de la misma situación, pero se organiza de manera más clara y funcional. Además
+                de los
+                comentarios detallados, se añadió una función específica para gestionar las inferencias y presentarlas
+                de manera
+                más comprensible para el usuario.
+            </p>
+
+            <p>
+                En esta versión, las inferencias sobre si los estudiantes visitaron BBC y si llovió hoy se realizan de
+                manera
+                más clara. Las respuestas ahora se presentan de forma explícita, lo que facilita el entendimiento del
+                resultado del
+                proceso de inferencia.
+            </p>
+
+            <h5>Elementos clave del código mejorado:</h5>
+            <ul>
+                <li><strong>Separación de lógica e inferencias:</strong> Se organiza la lógica de la base de
+                    conocimiento de manera independiente de las consultas, lo que mejora la legibilidad y la facilidad
+                    de uso.</li>
+                <li><strong>Función inferencias():</strong> Se crea una función dedicada a realizar y mostrar las
+                    consultas, lo que permite ejecutar todas las inferencias en una sola llamada.</li>
+                <li><strong>Claridad en los resultados:</strong> Se mejoró la presentación de las conclusiones,
+                    brindando respuestas explícitas (por ejemplo, "Sí, llovió hoy" o "No, no visitaron BBC"), lo que
+                    mejora la interpretación de los resultados.</li>
+            </ul>
+
+            <p>
+                Ambos ejemplos destacan la importancia de representar correctamente la información lógica y cómo la
+                inferencia
+                sobre modelos de verdad puede darnos respuestas válidas a preguntas complejas, siempre y cuando las
+                reglas y hechos
+                estén bien estructurados.
+            </p>
+
+            <h3>Enlaces adicionales</h3>
+            <p>
+                A continuación, anexo el link de una carpeta en Drive para observar el código del punto 5 del parcial
+                donde se
+                comentó cada funcionamiento, dando una breve explicación de su funcionamiento. También se anexa el
+                código del
+                punto 6 del parcial donde se creó la lógica para verificar la proposición de que si llovió en la
+                situación de
+                BBC.
+            </p>
+
+            <a href="https://drive.google.com/drive/folders/1wG35OJXjZpoySrZfOziJGaHi0NcHmmVO?usp=sharing"
+                target="_blank" class="btn btn-primary">Acceder a la carpeta en Google Drive</a>
         </div>
 
     </div>
-
-    <h2>CLASE 10 DE OCTUBRE, ENCUESTAS DE TRABAJO</h2>
-    <p>Durante la clase de inteligencia artificial, abordamos unas encuestas sobre perfil laboral y habilidades con los
-        siguientes resultados:</p>
-
-    <div class="card my-4">
-        <img src="ENCUESTA 1.PNG" alt="ENCUESTA 1" style="width: 100%; max-width: 400px; height: auto;">
-        <div class="card-body">
-            <p class="card-text">RESULTADO 1</p>
-        </div>
-    </div>
-
-    <div class="card my-4">
-        <img src="ENCUESTA 2.PNG" alt="ENCUESTA 2" style="width: 100%; max-width: 400px; height: auto;">
-        <div class="card-body">
-            <p class="card-text">RESULTADO 2</p>
-        </div>
-    </div>
-
-    <div class="card my-4">
-        <img src="ENCUESTA 3.PNG" alt="ENCUESTA 3" style="width: 100%; max-width: 400px; height: auto;">
-        <div class="card-body">
-            <p class="card-text">RESULTADO 3</p>
-        </div>
-    </div>
-    <h2>LISTADO DE RESULTADO DE TRABAJOS</h2>
-    <P>En el siguiente archivo se comparte el listado de posibles trabajos con relación a las respuestas, descargar
-        dando clic en el texto siguiente:</P>
-    <a href="TRABAJO.pdf" target="_blank">Descargar/Ver el PDF</a>
-
-    <h2>SEGUNDA ENCUESTA REALIZADA</h2>
-    <p>En esta segunda encuesta, se realizan preguntas sobre mi forma de pensar y de ser, para evaluar que perfil es
-        ideal a mi, con los siguientes resultados:</p>
-
-    <div class="card my-4">
-        <img src="encuesta 2.1.PNG" alt="ENCUESTA 2.1" style="width: 100%; max-width: 400px; height: auto;">
-        <div class="card-body">
-            <p class="card-text">RESULTADO ENCUESTA 2</p>
-        </div>
-    </div>
-
-    <P>En el siguiente archivo se comparte el listado de posibles trabajos con relación a las respuestas de la encuesta
-        2, descargar dando clic en el texto siguiente:</P>
-    <a href="ingeniero.pdf" target="_blank">Descargar/Ver el PDF</a>
-
-    <h2>ANALISIS DEL CODIGO </h2>
-    <P>El código que has compartido implementa un juego de Tic-Tac-Toe (Tres en Raya) donde la computadora siempre gana
-        o al menos empata. El motivo principal por el que la computadora parece invencible es porque utiliza el
-        algoritmo Minimax, el cual está diseñado para tomar decisiones óptimas. A continuación, explico el análisis
-        detallado:
-
-        Análisis del código y razones por las que la computadora siempre gana:
-        Algoritmo Minimax:
-
-        El algoritmo Minimax simula todos los movimientos posibles en el tablero y busca maximizar la ganancia de la
-        computadora (jugador 1) y minimizar la del humano (jugador -1).
-        El algoritmo es perfecto en el sentido de que considera todas las posibles jugadas futuras, lo que lo hace
-        invulnerable. Siempre elegirá la jugada que, como mínimo, lo llevará a un empate, y como máximo, a una victoria.
-        Evaluación exhaustiva:
-
-        La función movimiento_computadora recorre todas las posiciones vacías del tablero y para cada posición, evalúa
-        el resultado del movimiento utilizando el algoritmo Minimax. Esto asegura que la computadora siempre elige el
-        mejor movimiento posible.
-        Estado terminal:
-
-        La función evaluar y la función ganador determinan si uno de los jugadores ha ganado. Si la computadora puede
-        ganar en algún movimiento, lo hará. Si no puede ganar, forzará un empate. Debido a que el tablero tiene un
-        número limitado de movimientos posibles (9 espacios), la computadora puede calcular todas las secuencias de
-        jugadas.
-        No hay margen para errores humanos:
-
-        El Minimax está diseñado para minimizar las pérdidas. Si el humano comete un error, la computadora lo explotará
-        inmediatamente.
-        ¿Es posible ganarle a la computadora?
-        Dado que Minimax garantiza que la computadora siempre jugará de forma óptima, no es posible ganarle si la
-        computadora sigue el algoritmo correctamente. Si juegas perfectamente (como el algoritmo), el mejor resultado
-        que puedes obtener es un empate. El único caso en el que podrías ganar es si modificas el código para que la
-        computadora no siempre juegue de manera perfecta.
-
-        Probabilidades de ganarle:
-        Las probabilidades de ganarle a una computadora que usa Minimax son prácticamente nulas si el juego se
-        desarrolla sin errores de código. Esto se debe a que el algoritmo no permite que la computadora cometa errores.
-
-        ¿Cómo podrías ganar siempre?
-        Alterar el código:
-
-        Modificar el algoritmo Minimax para que no busque siempre el mejor movimiento. Por ejemplo, podrías introducir
-        un factor de aleatoriedad o hacer que la computadora omita ciertos movimientos óptimos.
-        Imponer limitaciones a la computadora:
-
-        Reducir la profundidad con la que la computadora analiza las jugadas. Si limitas el número de jugadas que el
-        Minimax puede considerar, se vuelve más fácil para el humano encontrar una secuencia ganadora.</P>
 
     <!-- Incluir JavaScript de Bootstrap y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
